@@ -189,7 +189,7 @@ def clean_crime_data(df):
 if __name__ == "__main__":
 
     # Import county FIPS data
-    # fips = scrape_data()
+    fips = scrape_data()
 
     # Import FBI Crime data for 2017
     CSV_PATH = Path('CrimeClean.py').cwd().parent / 'data' / 'raw' / \
@@ -209,4 +209,8 @@ if __name__ == "__main__":
     crime_2019 = pd.read_excel(CSV_PATH, header=4, skipfooter=8,
                            usecols=['State', 'County', 'Violent\ncrime', 'Property\ncrime'])
 
+    crime_2017 = clean_crime_data(crime_2017)
+    crime_2018 = clean_crime_data(crime_2018)
+    crime_2019 = clean_crime_data(crime_2019)
 
+    print(crime_2019)
