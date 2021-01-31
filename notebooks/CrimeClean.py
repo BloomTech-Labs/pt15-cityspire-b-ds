@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import requests
 from bs4 import BeautifulSoup as bs
+from pathlib import Path
 
 
 us_state_abbrev = {
@@ -187,4 +188,25 @@ def clean_crime_data(df):
 
 if __name__ == "__main__":
 
-    fips = scrape_data()
+    # Import county FIPS data
+    # fips = scrape_data()
+
+    # Import FBI Crime data for 2017
+    CSV_PATH = Path('CrimeClean.py').cwd().parent / 'data' / 'raw' / \
+        'Table_10_Offenses_Known_to_Law_Enforcement_by_State_by_Metropolitan_and_Nonmetropolitan_Counties_2017.xls'
+    crime_2017 = pd.read_excel(CSV_PATH, header=4, skipfooter=8,
+                           usecols=['State', 'County', 'Violent\ncrime', 'Property\ncrime'])
+
+    # # Import FBI Crime data for 2017
+    CSV_PATH = Path('CrimeClean.py').cwd().parent / 'data' / 'raw' / \
+        'Table_10_Offenses_Known_to_Law_Enforcement_by_State_by_Metropolitan_and_Nonmetropolitan_Counties_2018.xls'
+    crime_2018 = pd.read_excel(CSV_PATH, header=4, skipfooter=8,
+                           usecols=['State', 'County', 'Violent\ncrime', 'Property\ncrime'])
+
+    # # Import FBI Crime data for 2019
+    CSV_PATH = Path('CrimeClean.py').cwd().parent / 'data' / 'raw' / \
+        'Table_10_Offenses_Known_to_Law_Enforcement_by_State_by_Metropolitan_and_Nonmetropolitan_Counties_2019.xls'
+    crime_2019 = pd.read_excel(CSV_PATH, header=4, skipfooter=8,
+                           usecols=['State', 'County', 'Violent\ncrime', 'Property\ncrime'])
+
+
