@@ -9,8 +9,15 @@ pytest = "*"
 
 [packages]
 fastapi = "*"
-uvicorn = {extras = ["standard"], version = "*"}
+uvicorn = {extras = ["standard"],version = "*"}
 sqlalchemy = "*"
+pathlib = "*"
+pandas = "*"
+requests = "*"
+bs4 = "*"
+xlrd = "*"
+psycopg2 = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3"
