@@ -3,6 +3,9 @@ import numpy as np
 import requests
 from bs4 import BeautifulSoup as bs
 from pathlib import Path
+import sqlalchemy
+import os
+from dotenv import load_dotenv
 
 
 us_state_abbrev = {
@@ -209,8 +212,62 @@ if __name__ == "__main__":
     crime_2019 = pd.read_excel(CSV_PATH, header=4, skipfooter=8,
                            usecols=['State', 'County', 'Violent\ncrime', 'Property\ncrime'])
 
-    crime_2017 = clean_crime_data(crime_2017)
-    crime_2018 = clean_crime_data(crime_2018)
-    crime_2019 = clean_crime_data(crime_2019)
+    # Clean each crime dataset
+    crime_2017_clean = clean_crime_data(crime_2017)
+    crime_2018_clean = clean_crime_data(crime_2018)
+    crime_2019_clean = clean_crime_data(crime_2019)
 
-    print(crime_2019)
+    # Join three crime datasets
+    df1 = pd.merge(crime_2017_clean, crime_2018_clean,
+                on=['State', 'County'], how='outer')
+    df2 = pd.merge(df1, crime_2019_clean, on=['State', 'County'], how='outer')
+
+    # Join FIPS dataset
+    df3 = pd.merge(df2, fips, on=['State', 'County'], how='left')
+
+    # Calculate mean across three crime datasets
+    df3['Mean Violent Crime'] = df3[['Violent Crime_x',
+                                                'Violent Crime_y', 'Violent Crime']].mean(axis=1)
+    df3['Mean Property Crime'] = df3[['Property Crime_x',
+                                                'Property Crime_y', 'Property Crime']].mean(axis=1)
+
+    # Select the two new columns with mean data
+    df3 = df3[['County', 'FIPS', 'State',
+            'Mean Violent Crime', 'Mean Property Crime']]
+
+    # Drop rows with no FIPS data
+    df4 = df3.dropna(subset=['FIPS'])
+
+    # Convert FIPS data from object type to in64 type
+    df4['FIPS'] = df4['FIPS'].astype('int64')
+
+    # Import zips <-> fips mapping dataset
+    CSV_PATH = Path('CrimeClean.py').cwd().parent / 'data' / 'raw' / \
+        'ZIP-COUNTY-FIPS_2017-06.csv'
+    zips = pd.read_csv(CSV_PATH, usecols=['ZIP', 'STATE', 'STCOUNTYFP'])
+    zips.columns = ['ZIP', 'State', 'FIPS']
+
+    # Merge crime dataset with zips dataset
+    df5 = pd.merge(df4, zips, on=['FIPS'], how='left')
+
+    # Clean final dataset
+    df5 = df5.drop('State_y', axis=1)
+    df5 = df5[['ZIP', 'County', 'FIPS', 'State_x', 'Mean Violent Crime', 'Mean Property Crime']]
+    df5.columns = ['ZIP', 'County', 'FIPS', 'State', 'Mean Violent Crime', 'Mean Property Crime']
+
+    # Store cleaned data in directory
+    CSV_PATH = Path('CrimeClean.py').cwd().parent / 'data' / 'clean' / 'crime_clean.csv'
+    print('CSV_PATH', CSV_PATH)
+    df5.to_csv(CSV_PATH)
+
+    # Insert cleaned crime dataset into database
+    load_dotenv()
+    DB_USER = os.getenv("DB_USER")
+    DB_PASS = os.getenv("DB_PASS")
+    DB_HOST = os.getenv("DB_HOST")
+    DB_PORT = os.getenv("DB_PORT")
+    DB_NAME = os.getenv("DB_NAME")
+    DB_URL = f'postgresql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
+    engine = sqlalchemy.create_engine(DB_URL)
+    connection = engine.connect()
+    df5.to_sql("crime_rates", connection, if_exists='fail', method='multi')
