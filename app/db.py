@@ -18,7 +18,12 @@ async def get_db() -> sqlalchemy.engine.base.Connection:
     Otherwise uses a SQLite database for initial local development.
     """
     load_dotenv()
-    database_url = os.getenv('DATABASE_URL', default='sqlite:///temporary.db')
+    DB_USER=os.getenv("DB_USER")
+    DB_PASS=os.getenv("DB_PASS")
+    DB_HOST=os.getenv("DB_HOST")
+    DB_PORT=os.getenv("DB_PORT")
+    DB_NAME=os.getenv("DB_NAME")
+    database_url = f'postgresql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
     engine = sqlalchemy.create_engine(database_url)
     connection = engine.connect()
     try:
