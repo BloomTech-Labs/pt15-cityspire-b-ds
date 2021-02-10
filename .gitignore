@@ -147,3 +147,4 @@ cython_debug/
 
 # For database credentials
 *.env
+TO_PULL.md
