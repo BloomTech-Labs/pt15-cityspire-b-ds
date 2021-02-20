@@ -1,0 +1,511 @@
+City,State,Cost of Living Index
+Fairbanks,AK,107.9
+Anchorage,AK,110.7
+Huntsville,AL,91.3
+Dothan,AL,86.3
+Birmingham,AL,90.7
+Montgomery,AL,88.5
+Mobile,AL,88.3
+Auburn,AL,91.9
+Gadsden,AL,86.0
+Anniston,AL,85.7
+Florence,AL,86.8
+Daphne,AL,96.6
+Tuscaloosa,AL,91.0
+Cullman,AL,90.5
+Albertville,AL,90.9
+Decatur,AL,88.6
+Talladega,AL,87.4
+Little Rock,AR,88.0
+Russellville,AR,85.5
+Hot Springs,AR,87.3
+Pine Bluff,AR,82.3
+Jonesboro,AR,85.2
+Fort Smith,AR,84.2
+Searcy,AR,85.4
+Fayetteville,AR,90.4
+Sierra Vista,AZ,93.2
+Tucson,AZ,97.7
+Show Low,AZ,101.9
+Prescott,AZ,104.6
+Lake Havasu City,AZ,98.4
+Phoenix,AZ,104.3
+Flagstaff,AZ,108.5
+Yuma,AZ,94.5
+Yuba City,CA,108.7
+Fresno,CA,105.9
+Vallejo,CA,125.2
+Eureka,CA,116.5
+Hanford,CA,105.4
+Clearlake,CA,108.8
+Los Angeles,CA,140.6
+Napa,CA,149.6
+Modesto,CA,112.3
+El Centro,CA,102.3
+Visalia,CA,103.6
+Merced,CA,108.2
+Madera,CA,108.9
+Chico,CA,110.5
+Santa Maria,CA,143.0
+Stockton,CA,113.6
+Ukiah,CA,128.0
+Santa Cruz,CA,163.9
+San Francisco,CA,178.6
+Truckee,CA,132.8
+Redding,CA,108.7
+Ventura,CA,132.2
+Riverside,CA,116.1
+San Luis Obispo,CA,136.1
+San Jose,CA,173.5
+Salinas,CA,138.3
+Bakersfield,CA,102.9
+San Diego,CA,136.2
+Sacramento,CA,120.3
+Santa Rosa,CA,141.7
+Grand Junction,CO,98.1
+Greeley,CO,106.1
+Colorado Springs,CO,102.2
+Denver,CO,112.1
+Pueblo,CO,92.2
+Fort Collins,CO,109.2
+Glenwood Springs,CO,127.8
+Boulder,CO,118.7
+New London,CT,105.9
+Torrington,CT,105.2
+Hartford,CT,104.8
+New Haven,CT,107.7
+Stamford,CT,119.2
+Washington,DC,120.1
+Dover,DE,101.3
+Gainesville,FL,97.3
+Sebring,FL,93.1
+Tampa,FL,101.4
+Tallahassee,FL,96.4
+Crestview,FL,104.7
+Vero Beach,FL,98.9
+Ocala,FL,94.5
+The Villages,FL,100.7
+Pensacola,FL,97.9
+Miami,FL,110.1
+Port St. Lucie,FL,101.1
+Fort Myers,FL,101.5
+Homosassa Springs,FL,95.5
+Punta Gorda,FL,100.3
+Lakeland,FL,96.4
+Panama City,FL,101.9
+Lake City,FL,93.6
+Naples,FL,109.4
+Key West,FL,140.0
+Melbourne,FL,99.3
+Sarasota,FL,104.4
+Jacksonville,FL,99.0
+Daytona Beach,FL,99.6
+Orlando,FL,101.4
+Palatka,FL,93.2
+Statesboro,GA,91.1
+Warner Robins,GA,90.5
+Savannah,GA,97.3
+Gainesville,GA,97.0
+LaGrange,GA,86.0
+Hinesville,GA,90.8
+Valdosta,GA,89.2
+Rome,GA,89.6
+Macon,GA,87.2
+Jefferson,GA,97.4
+Brunswick,GA,94.4
+Dalton,GA,89.1
+Columbus,GA,88.5
+Augusta,GA,91.6
+Albany,GA,87.3
+Atlanta,GA,100.3
+Athens,GA,95.0
+Kapaa,HI,164.9
+Kahului,HI,158.5
+Honolulu,HI,158.0
+Hilo,HI,136.9
+Iowa City,IA,93.5
+Davenport,IA,87.2
+Des Moines,IA,91.7
+Cedar Rapids,IA,88.1
+Waterloo,IA,87.6
+Dubuque,IA,89.6
+Ames,IA,91.5
+Sioux City,IA,87.1
+Coeur d'Alene,ID,103.3
+Boise City,ID,100.3
+Lewiston,ID,92.5
+Pocatello,ID,90.8
+Idaho Falls,ID,91.7
+Twin Falls,ID,91.2
+Chicago,IL,100.1
+Carbondale,IL,83.5
+Champaign,IL,89.0
+Danville,IL,83.9
+Ottawa,IL,86.6
+Peoria,IL,86.7
+Quincy,IL,87.3
+Rockford,IL,87.2
+Bloomington,IL,89.0
+Springfield,IL,87.5
+Decatur,IL,84.9
+Kankakee,IL,91.0
+Indianapolis,IN,90.2
+Muncie,IN,83.7
+Marion,IN,81.8
+Michigan City,IN,87.8
+Bloomington,IN,92.4
+Richmond,IN,84.2
+Terre Haute,IN,84.7
+South Bend,IN,87.2
+Kokomo,IN,84.9
+Lafayette,IN,88.7
+Warsaw,IN,92.3
+Fort Wayne,IN,86.8
+Columbus,IN,89.1
+Evansville,IN,87.2
+Elkhart,IN,88.5
+Lawrence,KS,91.6
+Topeka,KS,85.6
+Wichita,KS,86.8
+Manhattan,KS,89.6
+Hutchinson,KS,84.0
+Paducah,KY,85.7
+Louisville,KY,91.6
+Owensboro,KY,86.6
+Elizabethtown,KY,88.1
+Bowling Green,KY,87.0
+Richmond,KY,90.8
+London,KY,84.6
+Lexington,KY,91.1
+Frankfort,KY,88.1
+Hammond,LA,89.0
+New Orleans,LA,92.4
+Baton Rouge,LA,91.1
+Alexandria,LA,86.2
+Opelousas,LA,86.1
+Shreveport,LA,85.8
+Lake Charles,LA,89.4
+Houma,LA,89.9
+Monroe,LA,86.5
+Lafayette,LA,89.6
+Boston,MA,132.6
+Worcester,MA,113.2
+Pittsfield,MA,106.4
+Barnstable Town,MA,122.4
+Springfield,MA,106.5
+Greenfield Town,MA,106.2
+Cumberland,MD,90.9
+Hagerstown,MD,99.7
+Baltimore,MD,107.0
+Salisbury,MD,103.2
+California,MD,104.8
+Lewiston,ME,99.7
+Augusta,ME,100.0
+Portland,ME,113.0
+Bangor,ME,98.0
+Lansing,MI,88.7
+Adrian,MI,90.5
+Holland,MI,96.2
+Saginaw,MI,84.0
+Ann Arbor,MI,99.3
+Owosso,MI,84.8
+Marquette,MI,91.3
+Midland,MI,87.0
+Monroe,MI,90.5
+Muskegon,MI,87.7
+Traverse City,MI,99.6
+Niles,MI,89.7
+Battle Creek,MI,85.9
+Bay City,MI,85.4
+Flint,MI,85.7
+Mount Pleasant,MI,86.8
+Detroit,MI,93.2
+Grand Rapids,MI,93.7
+Jackson,MI,87.4
+Kalamazoo,MI,89.3
+Mankato,MN,95.3
+Brainerd,MN,97.9
+Faribault,MN,102.3
+St. Cloud,MN,95.4
+Duluth,MN,93.2
+Minneapolis,MN,105.4
+Rochester,MN,97.3
+Farmington,MO,85.4
+Columbia,MO,89.8
+Cape Girardeau,MO,88.1
+Jefferson City,MO,86.3
+Joplin,MO,85.2
+Kansas City,MO,91.6
+Branson,MO,89.5
+St. Louis,MO,89.6
+St. Joseph,MO,85.5
+Springfield,MO,86.7
+Meridian,MS,82.0
+Gulfport,MS,86.8
+Jackson,MS,87.8
+Hattiesburg,MS,86.1
+Tupelo,MS,87.2
+Laurel,MS,85.9
+Bozeman,MT,125.3
+Kalispell,MT,112.7
+Helena,MT,104.2
+Missoula,MT,103.4
+Great Falls,MT,91.1
+Billings,MT,95.7
+Roanoke Rapids,NC,83.1
+Durham,NC,99.8
+Greensboro,NC,91.0
+Raleigh,NC,99.7
+Burlington,NC,91.8
+Jacksonville,NC,91.7
+Morehead City,NC,102.2
+Charlotte,NC,97.9
+Mount Airy,NC,89.0
+North Wilkesboro,NC,90.5
+Fayetteville,NC,89.5
+Greenville,NC,89.8
+Shelby,NC,88.1
+Lumberton,NC,83.4
+Goldsboro,NC,88.5
+Elizabeth City,NC,91.1
+Winston-Salem,NC,91.2
+Wilson,NC,86.3
+Wilmington,NC,99.0
+Hickory,NC,89.8
+Forest City,NC,89.4
+New Bern,NC,90.2
+Dunn,NC,91.4
+Rocky Mount,NC,88.3
+Asheville,NC,103.3
+Fargo,ND,91.4
+Bismarck,ND,93.1
+Minot,ND,90.7
+Grand Forks,ND,90.7
+Omaha,NE,92.9
+Grand Island,NE,88.8
+Lincoln,NE,94.7
+Concord,NH,108.3
+Claremont,NH,102.3
+Keene,NH,102.1
+Manchester,NH,109.6
+Ocean City,NJ,109.5
+Trenton,NJ,104.3
+Vineland,NJ,97.8
+Atlantic City,NJ,102.0
+Las Cruces,NM,88.8
+Hobbs,NM,87.7
+Albuquerque,NM,92.9
+Farmington,NM,88.4
+Roswell,NM,86.3
+Alamogordo,NM,85.8
+Gallup,NM,90.0
+Santa Fe,NM,105.1
+Reno,NV,107.4
+Las Vegas,NV,100.7
+Carson City,NV,103.0
+Watertown,NY,96.4
+Plattsburgh,NY,93.7
+Elmira,NY,92.5
+Rochester,NY,96.6
+Albany,NY,100.1
+Corning,NY,90.9
+Binghamton,NY,93.3
+Olean,NY,89.0
+Ogdensburg,NY,88.3
+Kingston,NY,106.1
+Auburn,NY,93.7
+Buffalo,NY,97.3
+Syracuse,NY,95.1
+Jamestown,NY,91.3
+New York,NY,128.0
+Utica,NY,94.1
+Glens Falls,NY,98.6
+Ithaca,NY,101.7
+Salem,OH,86.6
+Cleveland,OH,90.0
+Wooster,OH,95.5
+Portsmouth,OH,84.7
+Youngstown,OH,86.4
+Dayton,OH,88.4
+Springfield,OH,87.5
+Akron,OH,89.4
+Lima,OH,87.2
+Sandusky,OH,90.8
+Ashtabula,OH,87.4
+New Philadelphia,OH,88.9
+Athens,OH,88.5
+Columbus,OH,93.9
+Canton,OH,88.2
+Marion,OH,85.7
+Toledo,OH,87.5
+Chillicothe,OH,89.8
+Findlay,OH,91.1
+Zanesville,OH,87.6
+Cincinnati,OH,92.4
+Mansfield,OH,86.2
+Shawnee,OK,82.4
+Lawton,OK,82.8
+Stillwater,OK,86.3
+Tulsa,OK,86.7
+Muskogee,OK,81.3
+Enid,OK,82.9
+Oklahoma City,OK,87.3
+Albany,OR,105.4
+Hermiston,OR,97.9
+Grants Pass,OR,106.6
+Roseburg,OR,100.8
+Salem,OR,105.8
+Eugene,OR,108.4
+Corvallis,OR,110.6
+Medford,OR,107.5
+Klamath Falls,OR,97.1
+Portland,OR,116.5
+Bend,OR,115.9
+Coos Bay,OR,102.0
+Williamsport,PA,93.4
+Johnstown,PA,87.6
+New Castle,PA,88.1
+East Stroudsburg,PA,96.1
+Bloomsburg,PA,93.2
+Lancaster,PA,99.5
+Altoona,PA,90.8
+Allentown,PA,98.9
+Scranton,PA,91.3
+Reading,PA,96.0
+Chambersburg,PA,95.7
+Indiana,PA,90.8
+State College,PA,99.8
+DuBois,PA,88.2
+Lebanon,PA,95.4
+Erie,PA,91.8
+Philadelphia,PA,103.4
+Pittsburgh,PA,93.1
+Meadville,PA,88.5
+Gettysburg,PA,98.2
+Sunbury,PA,88.6
+Pottsville,PA,87.0
+Somerset,PA,89.3
+Harrisburg,PA,95.8
+York,PA,95.8
+Providence,RI,111.5
+Spartanburg,SC,91.0
+Seneca,SC,94.0
+Columbia,SC,91.9
+Myrtle Beach,SC,94.7
+Orangeburg,SC,85.3
+Greenville,SC,95.0
+Greenwood,SC,88.7
+Sumter,SC,88.1
+Hilton Head Island,SC,109.4
+Florence,SC,87.7
+Charleston,SC,101.7
+Sioux Falls,SD,92.8
+Rapid City,SD,94.2
+Johnson City,TN,88.1
+Cleveland,TN,89.5
+Memphis,TN,88.2
+Sevierville,TN,103.5
+Chattanooga,TN,91.2
+Clarksville,TN,88.7
+Morristown,TN,87.3
+Jackson,TN,85.2
+Nashville,TN,100.1
+Tullahoma,TN,88.7
+Greeneville,TN,86.5
+Cookeville,TN,90.9
+Knoxville,TN,91.6
+Kingsport,TN,86.0
+Tyler,TX,92.8
+Texarkana,TX,86.3
+Waco,TX,89.5
+Wichita Falls,TX,85.7
+Dallas,TX,98.5
+Abilene,TX,89.1
+Longview,TX,88.5
+McAllen,TX,86.0
+Midland,TX,97.8
+Corpus Christi,TX,93.3
+College Station,TX,92.3
+Houston,TX,95.8
+Huntsville,TX,91.2
+Nacogdoches,TX,89.6
+Killeen,TX,88.6
+Odessa,TX,92.7
+Brownsville,TX,87.8
+Victoria,TX,89.5
+El Paso,TX,88.6
+Marshall,TX,89.9
+Beaumont,TX,88.6
+Lufkin,TX,88.2
+Lubbock,TX,88.8
+Laredo,TX,90.1
+Amarillo,TX,88.2
+San Angelo,TX,90.7
+San Antonio,TX,92.7
+Sherman,TX,91.3
+Austin,TX,106.6
+Athens,TX,92.9
+St. George,UT,98.0
+Logan,UT,95.2
+Salt Lake City,UT,105.9
+Ogden,UT,99.8
+Provo,UT,100.9
+Harrisonburg,VA,95.5
+Lynchburg,VA,93.6
+Staunton,VA,94.5
+Danville,VA,87.1
+Virginia Beach,VA,99.0
+Charlottesville,VA,102.1
+Winchester,VA,97.2
+Blacksburg,VA,94.5
+Richmond,VA,99.2
+Roanoke,VA,94.1
+Martinsville,VA,85.0
+Burlington,VT,112.8
+Kennewick,WA,99.7
+Yakima,WA,97.5
+Bremerton,WA,115.0
+Bellingham,WA,111.6
+Centralia,WA,103.3
+Longview,WA,101.6
+Mount Vernon,WA,110.1
+Spokane,WA,100.4
+Shelton,WA,109.6
+Seattle,WA,124.6
+Port Angeles,WA,109.1
+Olympia,WA,110.9
+Oak Harbor,WA,125.2
+Moses Lake,WA,95.7
+Walla Walla,WA,100.9
+Aberdeen,WA,97.6
+Wenatchee,WA,106.6
+Fond du Lac,WI,88.0
+Whitewater,WI,97.7
+Appleton,WI,90.7
+Sheboygan,WI,89.7
+Wausau,WI,88.9
+Beaver Dam,WI,92.9
+Racine,WI,90.9
+Janesville,WI,89.8
+Green Bay,WI,91.4
+Madison,WI,99.5
+Oshkosh,WI,89.0
+La Crosse,WI,91.8
+Marinette,WI,86.6
+Stevens Point,WI,91.5
+Eau Claire,WI,91.8
+Watertown,WI,97.1
+Manitowoc,WI,87.8
+Milwaukee,WI,93.8
+Wisconsin Rapids,WI,86.9
+Wheeling,WV,84.1
+Weirton,WV,82.6
+Clarksburg,WV,83.4
+Beckley,WV,80.0
+Parkersburg,WV,84.7
+Bluefield,WV,81.2
+Charleston,WV,83.9
+Huntington,WV,84.3
+Morgantown,WV,88.5
+Cheyenne,WY,96.9
+Casper,WY,94.2
