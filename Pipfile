@@ -16,8 +16,9 @@ pandas = "*"
 requests = "*"
 bs4 = "*"
 xlrd = "*"
-psycopg2 = "*"
 python-dotenv = "*"
+pydantic = "*"
+psycopg2-binary = "*"
 
 [requires]
 python_version = "3"
