@@ -5,6 +5,16 @@ from dotenv import load_dotenv
 
 def fetch_data(city, state, ZIPcode, latitude, longitude):
 
+    # Verify ZIPcode, latitude and longitude have correct data types
+    try:
+        int(ZIPcode)
+        float(latitude)
+        float(longitude)
+    except:
+        print(f'Error: {ZIPcode} must be an integer. And {latitude} and {longitude} must be floats')
+        return None
+
+
     # Fetch data from population_size table
     def fetch_population_size():
 
