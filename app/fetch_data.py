@@ -103,7 +103,7 @@ def fetch_data(city, state, ZIPcode, latitude, longitude):
 
     # Fetch data from cost_of_living table
 
-    def fetch_cost_of_loving():
+    def fetch_cost_of_living():
 
         # Attempt to fetch 1 record from from cost_of_living table with City and State values
         SQL = f'''SELECT "Cost of Living Index" FROM cost_of_living WHERE "City" = '{city}' AND "State" = '{state}';'''
@@ -136,7 +136,7 @@ def fetch_data(city, state, ZIPcode, latitude, longitude):
     city_data['WalkScore'], city_data['WalkScoreDescription'] = fetch_walk_score()
     city_data['ViolentCrimeRate'], city_data['PropertyCrimeRate'] = fetch_crime_rates()
     city_data['MonthlyRents'] = fetch_zip_rent()
-    city_data['CostOfLivingIndex'] = fetch_cost_of_loving()
+    city_data['CostOfLivingIndex'] = fetch_cost_of_living()
 
     conn.close()
 
