@@ -11,6 +11,8 @@ router = APIRouter()
 
 
 @router.post('/output')
+    #an effective post route that outputs projected data. Requires 5 arguments
+    #listed below
 async def output(city, state, ZIPcode, latitude, longitude):
-    """Real data"""
+    #Real data#
     return fetch_data(city, state, ZIPcode, latitude, longitude)
