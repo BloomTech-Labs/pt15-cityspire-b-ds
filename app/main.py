@@ -5,7 +5,20 @@ import uvicorn
 from app import db, ml, viz
 
 description = """
-This is a basic example of how the return route will look like. 
+This is a finalized version of DS API. 
+
+GET route is used to ensure that AWS database has a proper connection
+(does not affect the functionality)
+
+POST route receives 5 arguments:
+city, state, ZIPcode, latitude, longitude
+
+and returns the following information:
+ZIPcode, City, State, Latitude, Longitude,
+Population, Density, WalkScore, WalkScoreDescription, 
+ViolentCrimeRate, PropertyCrimeRate, 
+MonthlyRents: Past 2 years,
+CostOfLivingIndex
 """
 
 app = FastAPI(
@@ -14,6 +27,7 @@ app = FastAPI(
     docs_url='/',
 )
 
+# This portion connects routers from other files all together
 app.include_router(db.router, tags=['Database'])
 app.include_router(ml.router, tags=['Machine Learning'])
 app.include_router(viz.router, tags=['Visualization'])
